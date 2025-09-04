@@ -5,7 +5,7 @@ export default defineConfig({
   lang: 'en-US',
   title: 'Muhammad Hanif',
   description: 'Vite & Vue powered static site generator.',
-  base: '/',
+  base: '/website',
 
   themeConfig: {
     nav: [
