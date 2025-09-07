@@ -35,7 +35,8 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github',  link: 'https://github.com/ethanxhf' },
-      { icon: 'telegram', link: 'https://t.me/ethanxhf' }
+      { icon: 'telegram', link: 'https://t.me/ethanxhf' },
+      { icon: 'linkedin',  link: 'https://linkedin.com/in/muhammad-hanif-694a45311' }
     ]
   },
 });
