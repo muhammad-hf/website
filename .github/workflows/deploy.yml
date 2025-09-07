@@ -3,7 +3,7 @@ name: Deploy VitePress site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Setiap ada push ke main, otomatis deploy
 
 permissions:
   contents: write
@@ -15,7 +15,7 @@ jobs:
       # 1. Checkout repository
       - uses: actions/checkout@v3
 
-      # 2. Setup Node.js
+      # 2. Setup Node.js versi terbaru
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -29,9 +29,10 @@ jobs:
       - name: Build VitePress site
         run: npm run docs:build
 
-      # 5. Deploy to GitHub Pages
+      # 5. Deploy ke branch gh-pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/.vitepress/dist
+          publish_branch: gh-pages
