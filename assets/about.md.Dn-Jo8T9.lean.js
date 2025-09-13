@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as r,ae as n}from"./chunks/framework.Bp710vBQ.js";const c=JSON.parse('{"title":"About Me","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),i={name:"about.md"};function o(l,e,m,u,s,h){return r(),t("div",null,[...e[0]||(e[0]=[n("",8)])])}const b=a(i,[["render",o]]);export{c as __pageData,b as default};
